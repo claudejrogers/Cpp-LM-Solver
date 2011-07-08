@@ -1,0 +1,201 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DCF487A013C7A48800DCE412 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCF4879F13C7A48800DCE412 /* main.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DCF4879913C7A48800DCE412 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DCF4879B13C7A48800DCE412 /* LMSolver */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LMSolver; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCF4879F13C7A48800DCE412 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		DCF487A113C7A48800DCE412 /* LMSolver.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = LMSolver.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DCF4879813C7A48800DCE412 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DCF4879013C7A48800DCE412 = {
+			isa = PBXGroup;
+			children = (
+				DCF4879E13C7A48800DCE412 /* LMSolver */,
+				DCF4879C13C7A48800DCE412 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DCF4879C13C7A48800DCE412 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCF4879B13C7A48800DCE412 /* LMSolver */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCF4879E13C7A48800DCE412 /* LMSolver */ = {
+			isa = PBXGroup;
+			children = (
+				DCF4879F13C7A48800DCE412 /* main.cpp */,
+				DCF487A113C7A48800DCE412 /* LMSolver.1 */,
+			);
+			path = LMSolver;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DCF4879A13C7A48800DCE412 /* LMSolver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCF487A413C7A48800DCE412 /* Build configuration list for PBXNativeTarget "LMSolver" */;
+			buildPhases = (
+				DCF4879713C7A48800DCE412 /* Sources */,
+				DCF4879813C7A48800DCE412 /* Frameworks */,
+				DCF4879913C7A48800DCE412 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LMSolver;
+			productName = LMSolver;
+			productReference = DCF4879B13C7A48800DCE412 /* LMSolver */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DCF4879213C7A48800DCE412 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "California Institute of Technology";
+			};
+			buildConfigurationList = DCF4879513C7A48800DCE412 /* Build configuration list for PBXProject "LMSolver" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DCF4879013C7A48800DCE412;
+			productRefGroup = DCF4879C13C7A48800DCE412 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DCF4879A13C7A48800DCE412 /* LMSolver */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DCF4879713C7A48800DCE412 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCF487A013C7A48800DCE412 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DCF487A213C7A48800DCE412 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DCF487A313C7A48800DCE412 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DCF487A513C7A48800DCE412 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DCF487A613C7A48800DCE412 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DCF4879513C7A48800DCE412 /* Build configuration list for PBXProject "LMSolver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCF487A213C7A48800DCE412 /* Debug */,
+				DCF487A313C7A48800DCE412 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCF487A413C7A48800DCE412 /* Build configuration list for PBXNativeTarget "LMSolver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCF487A513C7A48800DCE412 /* Debug */,
+				DCF487A613C7A48800DCE412 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DCF4879213C7A48800DCE412 /* Project object */;
+}
