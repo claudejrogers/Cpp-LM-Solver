@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC83DACA13C8438500D69E72 /* LMSolver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC83DAC813C8438500D69E72 /* LMSolver.cpp */; };
 		DCF487A013C7A48800DCE412 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCF4879F13C7A48800DCE412 /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DC83DAC813C8438500D69E72 /* LMSolver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LMSolver.cpp; sourceTree = "<group>"; };
+		DC83DAC913C8438500D69E72 /* LMSolver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMSolver.h; sourceTree = "<group>"; };
 		DCF4879B13C7A48800DCE412 /* LMSolver */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LMSolver; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCF4879F13C7A48800DCE412 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		DCF487A113C7A48800DCE412 /* LMSolver.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = LMSolver.1; sourceTree = "<group>"; };
@@ -59,6 +62,8 @@
 			isa = PBXGroup;
 			children = (
 				DCF4879F13C7A48800DCE412 /* main.cpp */,
+				DC83DAC813C8438500D69E72 /* LMSolver.cpp */,
+				DC83DAC913C8438500D69E72 /* LMSolver.h */,
 				DCF487A113C7A48800DCE412 /* LMSolver.1 */,
 			);
 			path = LMSolver;
@@ -115,6 +120,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCF487A013C7A48800DCE412 /* main.cpp in Sources */,
+				DC83DACA13C8438500D69E72 /* LMSolver.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,6 +166,13 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				HEADER_SEARCH_PATHS = "/usr/local/include/**";
+				LIBRARY_SEARCH_PATHS = "/usr/local/lib/**";
+				OTHER_LDFLAGS = (
+					"-lgsl",
+					"-lgslcblas",
+					"-lm",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -171,6 +184,13 @@
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				HEADER_SEARCH_PATHS = "/usr/local/include/**";
+				LIBRARY_SEARCH_PATHS = "/usr/local/lib/**";
+				OTHER_LDFLAGS = (
+					"-lgsl",
+					"-lgslcblas",
+					"-lm",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -194,6 +214,7 @@
 				DCF487A613C7A48800DCE412 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
