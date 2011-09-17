@@ -1,0 +1,2 @@
+C++ implementation of the Levenberg-Marquardt algorithm using GSL for the
+linear algebra functions.
